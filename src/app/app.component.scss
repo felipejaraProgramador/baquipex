@@ -1,0 +1,57 @@
+/*-------------------------- FONTS --------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+$logoFontTitle : 'Permanent Marker', cursive;
+$logoFontSub : 'Alegreya', serif;
+$principalFont : 'Poppins', sans-serif;
+
+/*------------------------- COLORS -------------------------*/
+$darkBlue: #2C3639;
+$blue: #0d6efd;
+$fontBlue: #10273D;
+$brown: #A27B5C;
+$gray: #DCD7C9;
+$darkGray: #7e7e7e;
+$customBlue: #3F4E4F;
+$orange: #e08709;
+$greenLight: #71B100;
+$danger: #DC3545;
+$green: #099f4a;
+$white: white;
+$whitesmoke: #f5f5f5;
+
+/*--------------------- MEDIAS QUERIES ---------------------*/
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+$xx-large: 1600px;
+
+@mixin phone {
+    @media (max-width: #{$medium}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+@mixin notebook {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$x-large}) {
+        @content;
+    }
+}
+@mixin xx-desktop {
+    @media (min-width: #{$xx-large}) {
+        @content;
+    }
+}
+
